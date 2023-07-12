@@ -3,7 +3,7 @@ html => HyperText Markup Language.
 => to create webpage on the browser.
 => to create structure on webpage.
 
-http => HyperText Tranfer Protocol
+http => HyperText Transfer Protocol
 
 start / developed => 1993
 who's developed => tim berners' lee 
@@ -13,7 +13,7 @@ html5 => embed multimedia => audio and video
 graphics tag 
 
 what is tag?
-a word written with angle braket it known as tag. for ex. <html>
+a word written with angle bracket it known as tag. for ex. <html>
 
 tag are two type 
 (1) closing / structure tag => which is started and end 
