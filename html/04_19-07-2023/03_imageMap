@@ -1,0 +1,9 @@
+imagemap means apply link on image some portion.
+
+in images has some shapes
+polygon, circle and rectangle
+
+in this we used
+<map> and <area> tag.
+
+    we need points so use paint editor.
