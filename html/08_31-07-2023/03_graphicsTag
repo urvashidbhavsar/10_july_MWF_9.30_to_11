@@ -1,0 +1,9 @@
+there are 2 graphics tag are available in html 
+(1) svg (scalable Vector graphics)
+(2) canvas
+
+svg tag give a structure on webpage.
+
+shapes : circle, polygon, rect, text, path etc...
+
+canvas can draw a graphics using js code .
