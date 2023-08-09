@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .link1:active {
+            color: brown;
+        }
+
+        .link2:visited {
+            color: chocolate;
+        }
+
+        .link3:hover {
+            color: darkcyan;
+        }
+
+        button {
+            height: 20px;
+            width: 100px;
+            background-color: crimson;
+            border: 2px solid crimson;
+            color: white;
+        }
+
+        button:hover {
+            background-color: white;
+            color: crimson;
+        }
+
+        input {
+            border: 1px solid gray;
+        }
+
+        input:focus-visible {
+            outline: none;
+            border: 1px solid blue;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 5px;
+        }
+
+        tr:nth-child(even) {
+            background-color: blueviolet;
+        }
+
+        tr:nth-child(odd) {
+            background-color: chocolate;
+        }
+
+        a:nth-child(4) {
+            color: black
+        }
+    </style>
+</head>
+
+<body>
+    <!-- pseudo class start with : symbol  -->
+    <a href="#" class="link1">Click Here</a>
+    <a href="#" class="link2">Click Here</a>
+    <a href="#" class="link3">Click Here</a>
+    <a href="">Click Here</a>
+    <button>Click</button>
+    <br> <br>
+    <div>
+        Enter value : <input type="text">
+    </div>
+    <br><br>
+    <table border="1">
+        <tr>
+            <td>123</td>
+            <td>123</td>
+            <td>123</td>
+            <td>123</td>
+        </tr>
+        <tr>
+            <td>123</td>
+            <td>123</td>
+            <td>123</td>
+            <td>123</td>
+        </tr>
+        <tr>
+            <td>123</td>
+            <td>123</td>
+            <td>123</td>
+            <td>123</td>
+        </tr>
+        <tr>
+            <td>123</td>
+            <td>123</td>
+            <td>123</td>
+            <td>123</td>
+        </tr>
+    </table>
+</body>
+
+</html>

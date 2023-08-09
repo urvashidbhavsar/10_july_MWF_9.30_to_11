@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::after {
+            content: "\1F917";
+        }
+
+        h1::before {
+            content: "\1F917";
+        }
+
+        .mydiv {
+            height: auto;
+            width: 200px;
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        .mydiv::first-letter {
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+
+        .mydiv::first-line {
+            color: red;
+        }
+
+        .mydiv::selection {
+            background-color: black;
+            color: white;
+        }
+
+        li::marker {
+            color: red;
+        }
+
+        input::placeholder {
+            font-size: 10px;
+            color: red;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- pseudo element is start with :: symbol -->
+    <h1>Hello world</h1>
+    <div class="mydiv">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, consequuntur qui error repellat et doloribus
+        magnam quos suscipit quis reiciendis rem ducimus distinctio reprehenderit voluptatibus eaque soluta fuga modi
+        quod.
+    </div>
+    <ul>
+        <li>List 1</li>
+        <li>List 2</li>
+    </ul>
+    <div>
+        enter value : <input type="text" name="" id="" placeholder="Enter Value">
+    </div>
+</body>
+
+</html>
