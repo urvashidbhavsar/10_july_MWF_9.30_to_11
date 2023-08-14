@@ -1,0 +1,14 @@
+position means how to positionate element on another element.
+
+position : static (default)
+position : fixed 
+position : sticky 
+position : relative 
+position : absolute 
+
+there are 5 property are only used with position : fixed, sticky, relative, absolute.
+(1) top 
+(2) left 
+(3) bottom 
+(4) right 
+(5) z-index 
