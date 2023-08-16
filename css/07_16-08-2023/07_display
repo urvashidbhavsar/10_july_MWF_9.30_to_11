@@ -1,0 +1,28 @@
+display means how your element display on webpage.
+
+display : none;
+display : inline 
+display : inline-block 
+display : block 
+display : flex 
+display : grid 
+display : table 
+
+(1) some property are only used with display flex 
+= flex (flex-grow, flex-shrink, flex-basis) (child class)
+= flex-flow (flex-direction, flex-wrap)
+= justify-content
+= align-items 
+= gap (row-gap, column gap)
+= align-self (child class)
+= order (child class)
+
+(2) some property are only used with display grid 
+= grid-template-rows 
+= grid-template-columns 
+= gap (row-gap, column gap)
+= align-self (child class)
+= justify-items
+= grid-row (grid-row-start, grid-row-end)  (child class)
+= grid-column (grid-column-start, grid-column-end) (child class)
+= place-content
