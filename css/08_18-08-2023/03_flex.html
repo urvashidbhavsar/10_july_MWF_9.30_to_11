@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* flex => flex-grow, flex-shrink, flex-basis */
+        .main {
+            display: flex;
+        }
+
+        .div1 {
+            flex-grow: 1;
+            flex-shrink: 1;
+            /* flex-basis: 40%; */
+        }
+
+        .div2 {
+            flex-grow: 2;
+        }
+
+        .div3 {
+            flex: 3;
+        }
+
+        .div1,
+        .div3,
+        .div5 {
+            height: 100px;
+            width: 100px;
+            background-color: chocolate;
+        }
+
+        .div2,
+        .div4 {
+            height: 100px;
+            width: 100px;
+            background-color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+        <div class="div4"></div>
+        <div class="div5"></div>
+    </div>
+</body>
+
+</html>

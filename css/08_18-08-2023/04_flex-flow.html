@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* flex flow => flex-direction, flex-wrap */
+        /* both used main in responsive website */
+        .main {
+            display: flex;
+            flex-flow: row-reverse wrap;
+            /* flex-wrap: wrap;
+            flex-direction: row-reverse; */
+        }
+
+        .div1,
+        .div2,
+        .div3 {
+            height: 100px;
+            width: 50%;
+        }
+
+        .div1 {
+            background-color: chartreuse;
+        }
+
+        .div2 {
+            background-color: rgb(246, 155, 29);
+        }
+
+        .div3 {
+            background-color: rgb(25, 160, 239);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="div1">div 1</div>
+        <div class="div2">div 2</div>
+        <div class="div3">div 3</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* order property set order of element which is set in flexible. */
+        .main {
+            display: flex;
+        }
+
+        .div1 {
+            order: 4;
+        }
+
+        .div2 {
+            order: 5;
+        }
+
+        .div3 {
+            order: 2;
+        }
+
+        .div4 {
+            order: 3;
+        }
+
+        .div5 {
+            order: 1;
+        }
+
+        .div1,
+        .div3,
+        .div5 {
+            height: 100px;
+            width: 100px;
+            background-color: chocolate;
+        }
+
+        .div2,
+        .div4 {
+            height: 100px;
+            width: 100px;
+            background-color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="div1">
+            <h1>1</h1>
+        </div>
+        <div class="div2">
+            <h1>2</h1>
+        </div>
+        <div class="div3">
+            <h1>3</h1>
+        </div>
+        <div class="div4">
+            <h1>4</h1>
+        </div>
+        <div class="div5">
+            <h1>5</h1>
+        </div>
+    </div>
+</body>
+
+</html>
