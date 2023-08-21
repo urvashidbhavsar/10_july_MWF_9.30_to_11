@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* it gives tabluar wise data  */
+        .main {
+            display: grid;
+            /* default grid apply in row wise */
+            /* grid-template-columns: auto auto auto auto auto; */
+            /* grid-template-columns: 1fr 1fr 2fr 1fr 1fr; */
+            grid-template-columns: repeat(5, 1fr);
+            justify-items: center;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .div1,
+        .div3,
+        .div5,
+        .div7,
+        .div9 {
+            height: 100px;
+            width: 100px;
+            background-color: cornflowerblue;
+        }
+
+        .div2,
+        .div4,
+        .div6,
+        .div8,
+        .div10 {
+            height: 100px;
+            width: 100px;
+            background-color: darkslateblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="div1">Div 1</div>
+        <div class="div2">Div 2</div>
+        <div class="div3">Div 3</div>
+        <div class="div4">Div 4</div>
+        <div class="div5">Div 5</div>
+        <div class="div6">Div 6</div>
+        <div class="div7">Div 7</div>
+        <div class="div8">Div 8</div>
+        <div class="div9">Div 9</div>
+        <div class="div10">Div 10</div>
+
+    </div>
+</body>
+
+</html>
