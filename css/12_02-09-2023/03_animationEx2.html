@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv {
+            height: 250px;
+            width: 250px;
+            border: 10px solid transparent;
+            margin: 160px auto;
+            display: grid;
+            place-content: center;
+            position: relative;
+            border-radius: 50%;
+        }
+
+        .innerdiv {
+            position: absolute;
+            left: -10px;
+            top: -10px;
+            height: 250px;
+            width: 250px;
+            border-top: 10px solid black;
+            border-right: 10px solid transparent;
+            border-left: 10px solid transparent;
+            border-bottom: 10px solid black;
+            border-radius: 50%;
+            animation: loading 2s linear infinite;
+        }
+
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        @keyframes loading {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv">
+        <h1>Loading...</h1>
+        <div class="innerdiv"></div>
+    </div>
+</body>
+
+</html>

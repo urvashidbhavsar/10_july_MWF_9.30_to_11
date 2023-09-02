@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        h1::after {
+            content: "";
+            height: 3px;
+            width: 150px;
+            background: linear-gradient(to right, red, blue, green);
+            display: inline-block;
+            margin: 7px 2px;
+        }
+
+        h1::before {
+            content: "";
+            height: 3px;
+            width: 150px;
+            background: linear-gradient(to left, red, blue, green);
+            display: inline-block;
+            margin: 7px 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Hello World
+    </h1>
+</body>
+
+</html>

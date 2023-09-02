@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv {
+            height: 200px;
+            width: 200px;
+            background-color: teal;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation-name: divmove;
+            animation-duration: 3s;
+            animation-timing-function: ease-in;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            animation-fill-mode: backwards;
+            /* fill mode:backward depend on delay and direction(reverse/alternate-reverse) */
+        }
+
+        /* to create an animation */
+        @keyframes divmove {
+            from {
+                margin: 0;
+            }
+
+            to {
+                margin-left: 200px;
+                margin-top: 200px;
+                border-radius: 50px;
+                background-color: thistle;
+                rotate: 360deg;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv"></div>
+</body>
+
+</html>
