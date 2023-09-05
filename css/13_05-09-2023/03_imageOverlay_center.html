@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            height: 300px;
+            width: 350px;
+        }
+
+        .imageoverlay {
+            height: 300px;
+            width: 350px;
+            border: 2px solid black;
+            margin: 20px auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .text {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.666);
+            color: white;
+            height: 100%;
+            width: 100%;
+            display: grid;
+            place-content: center;
+            transition: 1s all cubic-bezier(0.86, 0, 0.07, 1);
+            transform: scale(0);
+            border-radius: 50%;
+        }
+
+        .textdelay {
+            transform: rotateX(90deg);
+            /* transform: scale(0); */
+            transition: 1s all cubic-bezier(0.86, 0, 0.07, 1);
+            transition-delay: 2s;
+        }
+
+        .imageoverlay:hover .text {
+            transform: scale(1) rotate(360deg);
+            border-radius: 0;
+        }
+
+        .imageoverlay:hover .textdelay {
+            transform: rotateX(0deg);
+            /* transform: scale(1); */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="imageoverlay">
+        <div>
+            <img src="image1.jpg" alt="">
+        </div>
+        <div class="text">
+            <div class="textdelay">
+                <h1>Image 1</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

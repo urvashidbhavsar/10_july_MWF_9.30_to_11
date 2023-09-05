@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            height: 300px;
+            width: 350px;
+        }
+
+        .imageoverlay {
+            height: 300px;
+            width: 350px;
+            border: 2px solid black;
+            margin: 20px auto;
+            position: relative;
+        }
+
+        .text {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            /* right: 0; */
+            background-color: rgba(0, 0, 0, 0.666);
+            color: white;
+            height: 100%;
+            width: 0;
+            overflow: hidden;
+            display: grid;
+            place-content: center;
+            transition: 1s all cubic-bezier(0.86, 0, 0.07, 1);
+        }
+
+        .imageoverlay:hover .text {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="imageoverlay">
+        <div>
+            <img src="image1.jpg" alt="">
+        </div>
+        <div class="text">
+            <h1>Image 1</h1>
+        </div>
+    </div>
+</body>
+
+</html>
