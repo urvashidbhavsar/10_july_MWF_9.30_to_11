@@ -1,0 +1,9 @@
+using media query we can make a website responsive. 
+
+devices size                breakpoint 
+(1) mobile device           max-width:576px  
+(2) large mobile device     min-width:576px 
+(3) tablet device           min-width:768px 
+(4) mini leptop             min-width:992px 
+(5) large leptop screen     min-width:1140px = 1200px 
+(6) extra large screen      min-width:1400px 
