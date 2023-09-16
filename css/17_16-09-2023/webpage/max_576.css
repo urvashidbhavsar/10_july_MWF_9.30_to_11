@@ -1,0 +1,69 @@
+@media (max-width:576px) {
+    .container {
+        margin: 0px 20px;
+    }
+
+    header .navbar .nav {
+        display: none;
+    }
+
+    header .navbar .theme .togglebar {
+        display: block;
+    }
+
+    header .navbar .logo h1 {
+        font-size: 20px;
+    }
+
+    header .navbar .logo p {
+        font-size: 10px;
+    }
+
+    header .navbar .logo span {
+        font-size: 20px;
+        padding-top: 10px;
+    }
+
+    /* ============= homepage ========= */
+    .homepage .homecontent {
+        width: 100%;
+    }
+
+    .homepage .home-p-page {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .homepage .homecontent h1 {
+        font-size: 30px;
+    }
+
+    .homepage .homecontent p {
+        font-size: 15px;
+    }
+
+    /* ================ about us ============== */
+    .aboutus .about-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutus .about-box .about-concept h1 {
+        font-size: 25px;
+    }
+
+    /* ==================== challanges============= */
+    .challSec .challBoxes .mainBox {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .challSec .chall-box .chall-concept h1 {
+        font-size: 25px;
+    }
+
+    .challSec .chall-box {
+        display: flex;
+        flex-direction: column;
+    }
+}
