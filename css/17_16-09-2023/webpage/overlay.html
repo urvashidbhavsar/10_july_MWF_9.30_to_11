@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .imageoverlay {
+            height: 300px;
+            width: 300px;
+            border: 1px solid black;
+            margin: 50px auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .imageoverlay img {
+            height: 300px;
+            width: 300px;
+            transition: 0.5s ease all;
+        }
+
+        .imageoverlay:hover img {
+            transform: scale(1.1);
+        }
+
+        .imageoverlay .Overtext {
+            position: absolute;
+            /* top: 0; */
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            transition: 0.5s ease all;
+            overflow: hidden;
+            display: grid;
+        }
+
+        .imageoverlay:hover .Overtext {
+            background-color: rgba(0, 0, 0, 0.443);
+        }
+
+        .imageoverlay .textoverlay {
+            align-self: flex-end;
+            padding: 20px;
+            color: white;
+            transform: translateY(107px);
+            transition: 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+        }
+
+        .imageoverlay:hover .textoverlay {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="imageoverlay">
+        <div class="img">
+            <img src="images/b2.jpg" alt="">
+        </div>
+        <div class="Overtext">
+            <div class="textoverlay">
+                <h1>Image 1</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
