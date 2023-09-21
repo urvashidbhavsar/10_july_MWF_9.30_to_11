@@ -1,0 +1,71 @@
+@media (min-width:576px) {
+    .container {
+        margin: 0px 40px;
+    }
+
+    header .navbar .nav {
+        display: none;
+    }
+
+    header .navbar .theme .togglebar {
+        display: block;
+    }
+
+    /* ============= homepage ========= */
+    .homepage .homecontent {
+        width: 100%;
+    }
+
+    .homepage .home-p-page {
+        padding-top: 125px;
+        padding-bottom: 125px;
+    }
+
+    .homepage .homecontent h1 {
+        font-size: 30px;
+    }
+
+    .homepage .homecontent p {
+        font-size: 15px;
+    }
+
+    /* ================ about us ============== */
+    .aboutus .about-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutus .about-box .about-concept h1 {
+        font-size: 32px;
+    }
+
+    /* ==================== challanges============= */
+    .challSec .challBoxes .mainBox {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .challSec .chall-box .chall-concept h1 {
+        font-size: 32px;
+    }
+
+    .challSec .chall-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* ======== gallary section========= */
+    .gallery .galleryBox {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* ========== progress section======== */
+    .progressSec .resultbox {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .progressSec .resultbox h1 {
+        font-size: 25px;
+    }
+}
