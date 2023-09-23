@@ -1,0 +1,64 @@
+@media (min-width:992px) {
+    .container {
+        margin: 0px 65px;
+    }
+
+    header .navbar .nav {
+        display: block;
+    }
+
+    header .navbar .theme .togglebar {
+        display: none;
+    }
+
+    header .navbar .logo h1 {
+        font-size: 30px;
+    }
+
+    /* ============= homepage ========= */
+    .homepage .homecontent h1 {
+        font-size: 60px;
+    }
+
+    .homepage .home-p-page {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
+    /* ======== gallary section========= */
+    .gallery .galleryBox {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* ========== progress section======== */
+    .progressSec .resultbox {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .progressSec .resultbox h1 {
+        font-size: 40px;
+    }
+
+    /* ===== news section === */
+    .newsSec .newsGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .newsSec .gridbox .gridimg {
+        height: 253px;
+    }
+
+    .newsSec .box3 {
+        grid-row: unset;
+        grid-column: unset;
+        width: unset;
+        justify-self: unset;
+    }
+
+    /* ==== feedback section -=== */
+    .subscribeSec .subscribeMail {
+        width: 650px;
+    }
+}

@@ -1,0 +1,75 @@
+@media (min-width:768px) {
+    .container {
+        margin: 0px 55px;
+    }
+
+    /* header values inherit from min width 576px */
+    /* ============= homepage ========= */
+    .homepage .homecontent {
+        width: 600px;
+    }
+
+    .homepage .homecontent h1 {
+        font-size: 50px;
+    }
+
+    .homepage .homecontent p {
+        font-size: 20px;
+    }
+
+    /* ================ about us ============== */
+    .aboutus .about-box .about-concept h1 {
+        font-size: 40px;
+    }
+
+    /* ==================== challanges============= */
+    .challSec .chall-box .chall-concept h1 {
+        font-size: 40px;
+    }
+
+    /* ======== gallary section========= */
+    .gallery .galleryBox {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ========== progress section======== */
+    .progressSec .resultbox {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .progressSec .resultbox h1 {
+        font-size: 33px;
+    }
+
+    /* ===== news section === */
+    .newsSec .newsGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .newsSec .gridbox .gridimg {
+        height: 170px;
+        overflow: hidden;
+    }
+
+    .newsSec .box3 {
+        grid-row: 2;
+        grid-column: 1/span 2;
+        width: 350px;
+        justify-self: center;
+    }
+
+    /* ==== feedback section -=== */
+    .subscribeSec .subscribeMail {
+        width: 100%;
+    }
+
+    .subscribeSec .subscribeMail h1 {
+        font-size: 40px;
+    }
+
+    .subscribeSec .mailbox input[type="text"] {
+        width: 350px;
+    }
+}
