@@ -1,0 +1,28 @@
+@media (min-width:1200px) {
+    .container {
+        margin: 0px 80px;
+    }
+
+    header .navbar .logo h1 {
+        font-size: 33px;
+    }
+
+    /* ===================== about us ==============  */
+    .aboutus .about-box {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* ==================== challanges============= */
+    .challSec .chall-box {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* footer */
+    footer .footerGrid {
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr 1fr;
+        gap: 30px;
+    }
+}
