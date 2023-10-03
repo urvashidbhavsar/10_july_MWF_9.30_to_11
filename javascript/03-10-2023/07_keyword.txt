@@ -1,0 +1,10 @@
+keyword is a reserve word in programming.
+
+for ex. 
+document 
+console 
+do 
+var 
+let 
+const 
+for  etc..
