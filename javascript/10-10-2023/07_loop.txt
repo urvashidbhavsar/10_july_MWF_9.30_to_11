@@ -1,0 +1,30 @@
+Loop is a count number of iteration.
+
+there is 6 type of loop in js 
+(1) while loop 
+(2) do..while loop 
+(3) for loop 
+(4) for.. in loop (object)
+(5) for.. of loop (array)
+(6) for..each loop
+
+syntax : 
+(1) while 
+
+    while(condition){
+        statement;
+        increment / decrement 
+    }
+
+(2) do while 
+
+    do{
+        statement
+        increment / decrement
+    }while(condition)
+
+(3) for loop 
+
+    for(declaration; condition; increment/decrement){
+        statement
+    }
