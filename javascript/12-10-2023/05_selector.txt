@@ -1,0 +1,11 @@
+javascript selector : 
+
+(1) getElementById()
+(2) getElementByClassName()
+(3) getElemenntByTagName()
+(4) querySelector()
+(5) querySelectorAll()
+
+use two properties to print value in html structure 
+(1) innerHTML 
+(2) innerText

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <!-- query selector select id, class and element also -->
+    <p id="p3"></p>
+    <p class="p4"></p>
+    <div></div>
+    <script>
+        document.getElementById("p1").innerText = "<b>get element by id</b>"
+        document.getElementById("p2").innerHTML = "<b>get element by id</b>";
+        document.querySelector("#p3").innerHTML = "get element id by query selector";
+        document.querySelector(".p4").innerHTML = "get element by class";
+        document.querySelector("div").innerHTML = "select by only element"
+    </script>
+</body>
+
+</html>
