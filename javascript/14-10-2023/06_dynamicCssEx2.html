@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv,
+        .mydiv1 {
+            height: auto;
+            width: 300px;
+            border: 2px solid black;
+            margin: 20px;
+        }
+
+        /* make a css class which is not include in any structure */
+        .changeBg {
+            background-color: crimson;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="addCSS()">Add css</button>
+    <button onclick="removeCSS()">Remove css</button>
+    <button onclick="toggleCSS()">toggleCSS</button>
+    <hr>
+    <div class="mydiv">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi qui sit at nulla ut aliquam voluptatibus numquam
+        maiores magni quos dicta eius, pariatur quaerat? Tempore, soluta quas! Dignissimos, asperiores sed.
+    </div>
+    <div class="mydiv1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi qui sit at nulla ut aliquam voluptatibus numquam
+        maiores magni quos dicta eius, pariatur quaerat? Tempore, soluta quas! Dignissimos, asperiores sed.
+    </div>
+
+
+    <script>
+        function addCSS() {
+            let div = document.querySelector(".mydiv");
+            div.classList.add("changeBg")
+        }
+        function removeCSS() {
+            let div = document.querySelector(".mydiv");
+            div.classList.remove("changeBg")
+        }
+        function toggleCSS() {
+            let div = document.querySelector(".mydiv1");
+            div.classList.toggle("changeBg")
+        }
+    </script>
+</body>
+
+</html>

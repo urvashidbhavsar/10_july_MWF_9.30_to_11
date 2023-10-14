@@ -1,0 +1,9 @@
+used 3 functions to set css classes : 
+(1) add()   = use to add css class 
+(2) remove() = use to remove css class 
+(3) toggle() = use to add or remove css class 
+-------------------------------------------------------
+(4) contains() = use to css class is exist or not.
+
+used 1 property to set class .
+classList => set class 

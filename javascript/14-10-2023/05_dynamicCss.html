@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn1" onclick="changeDiv()">Click here</button>
+
+    <div class="mydiv">Lorem ipsum dolor sit amet consectetur adipisicing elit. A ratione delectus doloremque, voluptas
+        blanditiis dolore modi ad fuga quaerat nihil debitis qui atque deleniti recusandae soluta ducimus minima
+        consequuntur sunt?
+    </div>
+
+    <script>
+        function changeDiv() {
+            // document.body.style.backgroundColor
+            let div = document.querySelector(".mydiv");
+            div.style.height = "auto"
+            div.style.width = "300px"
+            div.style.backgroundColor = "chocolate"
+            div.style.padding = "20px"
+            div.style.margin = "30px"
+            div.style.border = "2px solid black"
+        }
+    </script>
+</body>
+
+</html>
