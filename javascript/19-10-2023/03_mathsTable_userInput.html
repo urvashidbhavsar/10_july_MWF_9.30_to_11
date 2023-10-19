@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .div1 {
+            height: auto;
+            width: 300px;
+            border: 1px solid black;
+            padding: 15px;
+            margin: 30px;
+        }
+
+        p {
+            margin: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form action="#">
+        <label for="">Enter Table No : </label>
+        <input type="text" name="" id="tableno">
+        <button onclick="return DisplayTable()">Display</button>
+    </form>
+    <div class="div1"></div>
+
+    <script>
+        // isNaN = is not a number
+        function DisplayTable() {
+            let num = document.getElementById("tableno").value;
+            let div = document.querySelector(".div1");
+            if (num == "") {
+                alert("Enter Number")
+            } else if (isNaN(num)) {
+                alert("invalid value")
+            } else {
+                var res = "", a = 1;
+                for (a = 1; a <= 10; a++) {
+                    res = res + "<p>" + num + "&Cross;" + a + "=" + num * a + "</p>"
+                }
+                div.innerHTML = res;
+                return false;
+            }
+        }
+        // <i class='fa-solid fa-xmark'></i>
+    </script>
+</body>
+
+</html>

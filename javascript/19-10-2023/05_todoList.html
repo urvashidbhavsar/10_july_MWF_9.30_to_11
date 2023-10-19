@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <input type="text" name="" id="addvalue">
+        <button onclick="AddValueList()">Add value</button>
+    </form>
+    <ul>
+        <li>List 1</li>
+    </ul>
+
+    <script>
+        function AddValueList() {
+            let list = document.createElement("li")
+            let inpvalue = document.getElementById("addvalue").value;
+            list.append(inpvalue);
+            document.querySelector("ul").append(list);
+            document.getElementById("addvalue").value = "";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="AddList()">click here to add value</button>
+    <ul>
+        <li>List 1</li>
+    </ul>
+
+    <script>
+        // append() => add value after the element.
+        // appendChild() => add value in the element
+        // in this program there is word is static but structure dynamic
+        function AddList() {
+            let list = document.createElement("li");
+            let listText = document.createTextNode("My New List");
+            list.appendChild(listText);
+            document.querySelector("ul").appendChild(list)
+        }
+    </script>
+</body>
+
+</html>
