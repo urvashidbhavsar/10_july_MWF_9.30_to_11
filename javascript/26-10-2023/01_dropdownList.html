@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .list {
+            background-color: rgb(9, 56, 186);
+            padding: 10px;
+        }
+
+        .list ul {
+            display: flex;
+            gap: 20px;
+        }
+
+        .list ul li {
+            padding: 5px;
+        }
+
+        .list ul li a {
+            color: white;
+        }
+
+        .list span {
+            font-size: 12px;
+            color: white;
+        }
+
+        .menu {
+            position: relative;
+        }
+
+        .menu .submenu {
+            display: none;
+            background-color: white;
+            padding: 10px;
+            line-height: 23px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px black;
+            position: absolute;
+            width: 103px;
+            /* margin-top: 12px; */
+            /* margin-left: -15px; */
+            transform: translate(-9px, 11px);
+        }
+
+        .menu .submenu a {
+            color: black;
+        }
+
+        /* create a another class to show dropdown menu */
+        .menu .dropdown {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="list">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li class="menu"><a href="#" onclick="showDropdown()">Blog</a>
+                <span class="fa-solid fa-angle-down"></span>
+                <div class="submenu">
+                    <div><a href="">Blogs</a></div>
+                    <div><a href="">Multiple Blog</a></div>
+                    <div><a href="">About Blogs</a></div>
+                </div>
+            </li>
+            <li><a href="">Account</a></li>
+        </ul>
+    </div>
+
+    <script>
+        // target => submenu class
+        // perform => blog list => class menu 
+
+        function showDropdown() {
+            let drop = document.querySelector(".submenu");
+            drop.classList.toggle("dropdown")
+        }
+    </script>
+</body>
+
+</html>

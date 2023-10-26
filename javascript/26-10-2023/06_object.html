@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- object has a keypair value -->
+    <p></p>
+    <script>
+        var chair = {
+            brands: "cello",
+            color: "white",
+            prize: 500,
+            productReceiveDate: "26-10-2023"
+        }
+        console.log(chair);
+        // single value print
+        // document.write(chair.brands)
+        // document.write(chair.color)
+
+        for (const ch in chair) {
+            const element = chair[ch];
+            console.log(ch + " => " + element);
+            document.write(ch + " &blacktriangleright; " + element + "<br>");
+        }
+    </script>
+
+</body>
+
+</html>
