@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .msg {
+            color: red;
+        }
+
+        .changeborder {
+            border: 1px solid red;
+        }
+
+        input {
+            border: 1px solid black;
+        }
+
+        input:focus-visible {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" method="post">
+        <div>
+            <label for="">Enter name : </label>
+            <input type="text" name="uname" id="username" placeholder="" onblur="return checkName()"
+                onkeyup="return checkNameEx()">
+            <span id="msg" class="msg"></span>
+        </div>
+        <div>
+            <button onclick="return checkName()">click</button>
+        </div>
+    </form>
+
+    <script>
+        function checkName() {
+            let user = document.getElementById("username");
+            if (user.value == "" || user.value == null) {
+                // alert("Enter name")
+                document.getElementById("msg").innerHTML = "Enter name"
+                user.classList.add("changeborder");
+                user.focus()
+                return false;
+            }
+        }
+        function checkNameEx() {
+            let user = document.getElementById("username");
+            let ex = /^[a-zA-Z]*$/
+            if (!(ex.test(user.value))) {
+                document.getElementById("msg").innerHTML = "Invalid name value"
+                user.classList.add("changeborder");
+                return false
+            } else if (user.value.length < 2) {
+                document.getElementById("msg").innerHTML = "enter minimum 2 character"
+                user.classList.add("changeborder");
+                return false
+            } else {
+                document.getElementById("msg").innerHTML = ""
+                user.classList.remove("changeborder");
+                return false
+            }
+        }
+    </script>
+</body>
+
+</html>
