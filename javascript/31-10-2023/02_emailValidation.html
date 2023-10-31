@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            color: red;
+        }
+
+        .setError {
+            border: 1px solid red;
+        }
+
+        input {
+            border: 1px solid black;
+        }
+
+        input:focus-visible {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <div>
+            <label for="">Enter Email : </label>
+            <input type="text" name="email" id="mail" onblur="return EmailCheck()" onkeyup="return EmailExpCheck()">
+            <span id="msg"></span>
+        </div>
+        <div>
+            <button onclick="return EmailCheck()">click here</button>
+        </div>
+    </form>
+
+    <script>
+        // click event & blur event
+        function EmailCheck() {
+            let mail = document.getElementById("mail")
+            if (mail.value == "" || mail.value == null) {
+                document.getElementById("msg").innerHTML = "Enter Email Address";
+                mail.classList.add("setError")
+                return false
+            }
+        }
+
+        // email Expression
+        function EmailExpCheck() {
+            let mail = document.getElementById("mail")
+            let mailEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            if (mailEx.test(mail.value)) {
+                document.getElementById("msg").innerHTML = ""
+                return false
+            } else {
+                document.getElementById("msg").innerHTML = "Enter proper email"
+                return false
+            }
+        }
+
+    </script>
+</body>
+
+</html>

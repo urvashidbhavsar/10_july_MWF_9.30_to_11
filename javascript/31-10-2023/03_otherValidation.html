@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .msg {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <table border="0">
+            <!-- radio button -->
+            <tr>
+                <td>Gender : </td>
+                <td>
+                    <input type="radio" name="gen" id="male" onblur="return validateField()">
+                    <label for="">Male</label>
+                    <input type="radio" name="gen" id="female" onblur="return validateField()">
+                    <label for="">Female</label>
+                </td>
+                <td>
+                    <span id="msg1" class="msg"></span>
+                </td>
+            </tr>
+            <!-- checkbox -->
+            <tr>
+                <td>Experiance</td>
+                <td>
+                    <input type="checkbox" name="" id="check1">
+                    <label for="">0</label>
+                    <input type="checkbox" name="" id="check2">
+                    <label for="">1</label>
+                    <input type="checkbox" name="" id="check3">
+                    <label for="">more than 1</label>
+                </td>
+                <td>
+                    <span id="msg2" class="msg"></span>
+                </td>
+            </tr>
+            <!-- dropdown menu -->
+            <tr>
+                <td>City :</td>
+                <td>
+                    <select name="" id="citylist" onblur="return validateField()">
+                        <option value="-1">--select--</option>
+                        <option value="">surat</option>
+                    </select>
+                </td>
+                <td>
+                    <span id="msg3" class="msg"></span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <button onclick="return validateField()">click here</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+
+    <script>
+        function validateField() {
+            let m = document.getElementById("male").checked;
+            let f = document.getElementById("female").checked;
+            if (m == false && f == false) {
+                document.getElementById("msg1").innerHTML = "Select Gender";
+                return false
+            } else {
+                document.getElementById("msg1").innerHTML = "";
+            }
+
+            let c1 = document.getElementById("check1").checked;
+            let c2 = document.getElementById("check2").checked;
+            let c3 = document.getElementById("check3").checked;
+            if (c1 == false && c2 == false && c3 == false) {
+                document.getElementById("msg2").innerHTML = "Select Experiance";
+                return false
+            } else {
+                document.getElementById("msg2").innerHTML = "";
+            }
+
+            let city = document.getElementById("citylist").value;
+            if (city == "-1") {
+                document.getElementById("msg3").innerHTML = "Select city";
+                return false
+            } else {
+                document.getElementById("msg3").innerHTML = "";
+            }
+            // else {
+            //     document.getElementById("msg1").innerHTML = "";
+            //     document.getElementById("msg2").innerHTML = "";
+            //     document.getElementById("msg3").innerHTML = "";
+            //     return false
+            // }
+        }
+    </script>
+</body>
+
+</html>

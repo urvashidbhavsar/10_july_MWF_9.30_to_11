@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            color: red;
+        }
+
+        .setError {
+            border: 1px solid red;
+        }
+
+        input {
+            border: 1px solid black;
+        }
+
+        input:focus-visible {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <div>
+            <label for="">Enter Number : </label>
+            <input type="text" name="mobileno" id="mobile" onblur="return mobilenoCheck()"
+                onkeyup="return MobileNoExp()" maxlength="10">
+            <span id="msg"></span>
+        </div>
+        <div>
+            <button onclick="return mobilenoCheck()">click here</button>
+        </div>
+    </form>
+
+    <script>
+        // click event & blur event
+        function mobilenoCheck() {
+            let mno = document.getElementById("mobile");
+            if (mno.value == "" || mno.value == null) {
+                document.getElementById("msg").innerHTML = "Enter Mobile no";
+                mno.classList.add("setError")
+                return false;
+            }
+        }
+
+        // keyboard event
+        function MobileNoExp() {
+            let mno = document.getElementById("mobile");
+            let regEx = /^[0-9]*$/;
+            let start = /^[6-9]/
+            if (!(regEx.test(mno.value)) || !(start.test(mno.value))) {
+                document.getElementById("msg").innerHTML = "Invalid number"
+                mno.classList.add("setError")
+                return true
+            } else if (mno.value.length < 10) {
+                document.getElementById("msg").innerHTML = "enter 10 number"
+                mno.classList.add("setError")
+                return false
+            } else {
+                document.getElementById("msg").innerHTML = ""
+                mno.classList.remove("setError")
+                return true
+            }
+        }
+    </script>
+</body>
+
+</html>
