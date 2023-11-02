@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .addBlock {
+            padding: 20px;
+            border: 1px solid;
+            width: fit-content;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .row {
+            padding: 5px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="addBlock">
+        <div class="row">
+            <div>1st Number</div>
+            <div>
+                <input type="text" name="" id="n1">
+            </div>
+        </div>
+        <div class="row">
+            <div>2nd Number</div>
+            <div>
+                <input type="text" name="" id="n2">
+            </div>
+        </div>
+        <div class="row">
+            <button onclick="return AdditionNum('n1','n2','res')">Result</button>
+        </div>
+        <p>Addition is : <b><span id="res"></span></b></p>
+    </div>
+
+    <div class="addBlock">
+        <div class="row">
+            <div>1st Number</div>
+            <div>
+                <input type="text" name="" id="num1">
+            </div>
+        </div>
+        <div class="row">
+            <div>2nd Number</div>
+            <div>
+                <input type="text" name="" id="num2">
+            </div>
+        </div>
+        <div class="row">
+            <button onclick="return AdditionNum('num1','num2','res2')">Result</button>
+        </div>
+        <p>Addition is : <b><span id="res2"></span></b></p>
+    </div>
+
+    <script>
+        function AdditionNum(num1, num2, res) {
+            let number1 = document.getElementById(num1).value;
+            let number2 = document.getElementById(num2).value;
+            if ((number1 == "" || number1 == null) || (number2 == "" || number2 == null)) {
+                alert("enter value")
+            } else {
+                var result;
+                result = Number(number1) + Number(number2);
+                document.getElementById(res).innerHTML = result;
+            }
+        }
+    </script>
+</body>
+
+</html>
