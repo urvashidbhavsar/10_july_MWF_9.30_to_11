@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .msg {
+            color: red;
+        }
+
+        .changeborder {
+            border: 1px solid red;
+        }
+
+        input {
+            border: 1px solid black;
+        }
+
+        input:focus-visible {
+            outline: none;
+        }
+
+        .mainDiv {
+            border: 1px solid black;
+            padding: 10px;
+            width: fit-content;
+        }
+
+        .field {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            padding: 3px;
+            gap: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" method="post">
+        <div class="mainDiv">
+            <div class="field">
+                <label for="">Firstname </label>
+                <input type="text" name="fname" id="firstname" onblur="return checkNameField(this, 'msg1')"
+                    onkeyup="return checkNameEx(this,'msg1')">
+                <span id="msg1" class="msg"></span>
+            </div>
+            <div class="field">
+                <label for="">Middlename </label>
+                <input type="text" name="mname" id="middlename" onblur="return checkNameField(this, 'msg2')"
+                    onkeyup="return checkNameEx(this,'msg2')">
+                <span id="msg2" class="msg"></span>
+            </div>
+            <div class="field">
+                <label for="">Lastname </label>
+                <input type="text" name="lname" id="lastname" onblur="return checkNameField(this, 'msg3')"
+                    onkeyup="return checkNameEx(this,'msg3')">
+                <span id="msg3" class="msg"></span>
+            </div>
+            <div>
+                <button onclick="return checkName()">click</button>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        function checkName() {
+            let fn = document.getElementById("firstname");
+            if (fn.value == "" || fn.value == null) {
+                document.getElementById("msg1").innerHTML = "Enter firstname";
+                fn.focus();
+                return false;
+            } else {
+                document.getElementById("msg1").innerHTML = ""
+            }
+
+            let mn = document.getElementById("middlename");
+            if (mn.value == "" || mn.value == null) {
+                document.getElementById("msg2").innerHTML = "Enter middlename";
+                mn.focus();
+                return false;
+            } else {
+                document.getElementById("msg2").innerHTML = ""
+            }
+
+            let ln = document.getElementById("lastname");
+            if (ln.value == "" || ln.value == null) {
+                document.getElementById("msg3").innerHTML = "Enter lastname";
+                ln.focus()
+                return false;
+            } else {
+                document.getElementById("msg3").innerHTML = ""
+            }
+        }
+        // argument function 
+        function checkNameField(blank, msg) {
+            if (blank.value == "" || blank.value == null) {
+                document.getElementById(msg).innerHTML = "Please fill value";
+                return false
+            }
+        }
+
+        function checkNameEx(exp, msg) {
+            let ex = /^[a-zA-Z]*$/
+            if (!(ex.test(exp.value))) {
+                document.getElementById(msg).innerHTML = "Invalid name value"
+                exp.classList.add("changeborder");
+                return false
+            } else if (exp.value.length < 2) {
+                document.getElementById(msg).innerHTML = "enter minimum 2 character"
+                exp.classList.add("changeborder");
+                return false
+            } else {
+                document.getElementById(msg).innerHTML = ""
+                exp.classList.remove("changeborder");
+                return false
+            }
+        }
+    </script>
+</body>
+
+</html>
