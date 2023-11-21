@@ -1,0 +1,16 @@
+jquery is a javascript library.
+
+website : https://jquery.com/
+
+version = jquery3
+3.7.1
+
+cdn => online 
+offline package download 
+
+syntax :
+$(document).ready(function(){
+    $("selector").event(function(){
+        $("selector").jqueryFunctions();
+    })
+})
