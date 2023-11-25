@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1 {
+            height: auto;
+            width: 300px;
+            border: 1px solid black;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn1">empty</button>
+    <button id="btn2">remove</button>
+
+    <div class="div1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, repudiandae nesciunt distinctio debitis
+        voluptatibus error magnam non, reprehenderit repellat doloremque ipsam molestiae ipsa voluptates itaque dolorum
+        corrupti totam obcaecati quisquam.
+    </div>
+
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $(".div1").empty();
+            })
+            $("#btn2").click(function () {
+                $(".div1").remove();
+            })
+        })
+    </script>
+</body>
+
+</html>
