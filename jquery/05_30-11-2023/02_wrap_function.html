@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .mydiv {
+            border: 1px solid;
+            padding: 4px;
+            width: fit-content;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <button id="btn1">wrap</button>
+    <p class="mypara">paragraph1</p>
+    <p class="mypara">paragraph2</p>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $(".mypara").wrap("<div class='mydiv'></div>")
+            })
+        })
+    </script>
+
+    <hr>
+    <button id="btn2">wrap inner</button>
+    <p class="mypara1">paragraph1</p>
+    <p class="mypara1">paragraph2</p>
+    <script>
+        $(function () {
+            $("#btn2").click(function () {
+                $(".mypara1").wrapInner("<span style='color:blue'>Hello </span>")
+            })
+        })
+    </script>
+
+    <hr>
+    <button id="btn3">Wrapall</button>
+    <p class="mypara2">paragrap1</p>
+    <p class="mypara2">paragrap2</p>
+    <script>
+        $(function () {
+            $("#btn3").click(function () {
+                $(".mypara2").wrapAll("<div class='mydiv'></div>")
+            })
+        })
+    </script>
+
+    <hr>
+    <button id="btn4">unwrap</button>
+    <div class="mydiv">
+        <p class="mypara3">paragraph1</p>
+        <p class="mypara3">paragraph2</p>
+    </div>
+    <script>
+        $(function () {
+            $("#btn4").click(function () {
+                $(".mypara3").unwrap()
+            })
+        })
+    </script>
+</body>
+
+</html>

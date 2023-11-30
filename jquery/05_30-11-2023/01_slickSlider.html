@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .slider img {
+            height: 600px;
+            width: 100%;
+        }
+
+        .carouselSlider img {
+            height: 200px;
+            width: 100%;
+            border: 2px solid white;
+        }
+
+        .slick-next {
+            right: 0 !important;
+        }
+
+        .slick-prev {
+            left: 0 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- slick js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <h1 style="text-align: center;">Main slider</h1>
+    <div class="homebanner">
+        <div class="slider">
+            <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="">
+        </div>
+        <div class="slider">
+            <img src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg"
+                alt="">
+        </div>
+        <div class="slider">
+            <img src="https://cdn.pixabay.com/photo/2018/09/20/15/13/church-3691120_960_720.jpg" alt="">
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('.homebanner').slick({
+                arrows: false,
+            });
+        });
+    </script>
+
+    <h1 style="text-align: center">Carousel slider</h1>
+    <div class="carouselSlider">
+        <div class="sliders">
+            <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="">
+        </div>
+        <div class="sliders">
+            <img src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg"
+                alt="">
+        </div>
+        <div class="sliders">
+            <img src="https://cdn.pixabay.com/photo/2018/09/20/15/13/church-3691120_960_720.jpg" alt="">
+        </div>
+        <div class="sliders">
+            <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="">
+        </div>
+        <div class="sliders">
+            <img src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg"
+                alt="">
+        </div>
+        <div class="sliders">
+            <img src="https://cdn.pixabay.com/photo/2018/09/20/15/13/church-3691120_960_720.jpg" alt="">
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            $('.carouselSlider').slick({
+                arrow: false,
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1
+            });
+        });
+    </script>
+</body>
+
+</html>
