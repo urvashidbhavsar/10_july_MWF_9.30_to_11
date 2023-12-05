@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 50px;
+            width: 100%;
+            border: 1px solid gray;
+            margin: 10px;
+        }
+
+        .change {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn1">click</button>
+    <hr>
+    <div class="div1">div 1</div>
+    <div class="div2">div 2</div>
+    <div class="div3">div 3</div>
+    <div class="div4">div 4</div>
+    <div class="div5">div 5</div>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                // $(".div1").siblings().addClass("change")
+                // $(".div1").siblings("hr").addClass("change")
+                // $(".div1").next().addClass("change")
+                // $(".div1").nextAll().addClass("change")
+                // $(".div1").nextUntil(".div5").addClass("change")
+                // $(".div5").prev().addClass("change")
+                // $(".div5").prevAll().addClass("change")
+                $(".div5").prevUntil(".div1").addClass("change")
+            })
+        })
+    </script>
+</body>
+
+</html>

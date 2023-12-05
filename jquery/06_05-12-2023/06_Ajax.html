@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- ajax means asynchronised javascript and XML
+            xml => extentible markup language
+        
+        use to load external file without reloading whole page.
+        file like, html, css, txt, doc, etc.
+    -->
+    <button id="btn1">click to load file</button>
+    <h1></h1>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("h1").load("data.txt", function () {
+                    alert("file loaded")
+                })
+            })
+        })
+    </script>
+</body>
+
+</html>

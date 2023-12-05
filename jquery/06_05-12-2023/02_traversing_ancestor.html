@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main,
+        .sub,
+        .para,
+        span {
+            border: 1px solid gray;
+            margin: 7px;
+            padding: 5px;
+        }
+
+        .change {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn1">click</button>
+    <hr>
+    <div class="main">main
+        <div class="sub">sub
+            <p class="para">my paragraph
+                <span>span tag</span>
+            </p>
+        </div>
+    </div>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                // $("span").parent().addClass("change")
+                // $("span").parent(".sub").addClass("change")
+                // $("span").parents().addClass("change")
+                $("span").parentsUntil("body").addClass("change")
+            })
+        })
+    </script>
+</body>
+
+</html>
