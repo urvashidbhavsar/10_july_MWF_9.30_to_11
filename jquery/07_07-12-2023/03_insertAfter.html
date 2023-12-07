@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn">click</button>
+    <hr>
+    <h1>Hello User</h1>
+    <p id="p1">paragraph1</p>
+    <p id="p2">paragraph2</p>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                // same as insertBefore()
+                $("#p1").clone(true).insertAfter("h1")
+            })
+        })
+    </script>
+</body>
+
+</html>
