@@ -1,0 +1,16 @@
+bootstrap is a css library / framework. 
+
+how to use : 
+(1) bootstrap package download
+(2) use online cdn
+
+version : bootstrap5
+
+differnce : 
+(1) bootstrap4 = 5 responsive tier.
+    bootstrap5 = 6 responsive tier.
+    
+(2) bootstrap4 = readymate component available in Jquery code
+    bootstrap5 = readymate component available in vanilla js. (pure js)
+
+website : https://getbootstrap.com/
