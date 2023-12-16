@@ -1,0 +1,17 @@
+css breakpoint                          bootstrap
+
+max-width : 576px                           - 
+min-width : 576px                          sm 
+min-width : 768px                          md 
+min-width : 992px                          lg 
+min-width : 1200px                          xl 
+min-width : 1400px                          xxl 
+
+=> set page design : 
+- container 
+- container-fluid 
+
+=> grid system => gives a 12 column system.
+class 
+(1) row 
+(2) col 
