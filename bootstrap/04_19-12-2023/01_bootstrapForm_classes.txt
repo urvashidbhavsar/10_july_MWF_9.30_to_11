@@ -1,0 +1,31 @@
+element                                     class 
+================================================================
+(1) input type                              form-control 
+    text, date, number, password, email 
+    search, url, file
+    textarea tag 
+
+(2) input type                              form-check-input
+    radio, checkbox 
+    label                                   form-check-label 
+    parent div (vertically)                 form-check 
+    parent div (horizontally)               form-check-inline 
+
+(3) for label                               form-label
+
+(4) for dropdown                            form-select 
+    for multiple value selection 
+    set attribute = multiple 
+    give size if you want 
+
+(5) input type = color                     form-control and form-control-color
+
+(6) input type = range                      form-range 
+
+(7) input group 
+    for parent div                          input-group 
+    for label, button or any                input-group-text 
+
+(8) form-floating depend on placeholder attribute 
+
+
