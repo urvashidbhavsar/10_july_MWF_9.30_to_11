@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.2/font/bootstrap-icons.min.css">
+    <!-- bootstrap css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaQuery.css">
+</head>
+
+<body>
+    <header class="">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-white" href="#">
+                        <h2 class="">
+                            <span class="bi bi-house-door"></span>
+                            Frontage
+                        </h2>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#headerNav"
+                        aria-controls="headerNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="fa-solid fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="headerNav">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-white text-uppercase" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white text-uppercase" href="#">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-uppercase text-white" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Account
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#loginpage">Login</a></li>
+                                    <li><a class="dropdown-item" href="#">Register</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="nav-link dropdown-toggle text-white text-uppercase" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Blog
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Blog</a></li>
+                                    <li><a class="dropdown-item" href="#">New Blog</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="nav-link dropdown-toggle text-white text-uppercase" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Shop
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Ecommerce</a></li>
+                                    <li><a class="dropdown-item" href="#">Ecommerce Page</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white text-uppercase" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- carousel -->
+    <section class="homeslide">
+        <div id="homeslider" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active slider1">
+                    <div class="container">
+                        <p class="text-white text-uppercase fs-5">trust and recommed</p>
+                        <p class="text-capitalize text-white display-2 fw-medium title">we are
+                            architects, planner &
+                            designer.
+                        </p>
+                        <p class="text-white fs-5 py-2 btmtitle">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Fugiat
+                            dolorem praesentium dolore
+                            animi repellat molestias explicabo hic veritatis earum.</p>
+                        <button class="btnRead">Read More</button>
+                    </div>
+                </div>
+                <div class="carousel-item slider2">
+                    <div class="container">
+                        <p class="text-white text-uppercase fs-5">trust and recommed</p>
+                        <p class="text-capitalize text-white display-2 fw-medium title">we are architects, planner &
+                            designer.
+                        </p>
+                        <p class="text-white btmtitle fs-5 py-2">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Fugiat
+                            dolorem praesentium dolore
+                            animi repellat molestias explicabo hic veritatis earum.</p>
+                        <button class="btnRead">Read More</button>
+                    </div>
+                </div>
+                <div class="carousel-item slider3">
+                    <div class="container">
+                        <p class="text-white text-uppercase fs-5">trust and recommed</p>
+                        <p class="text-capitalize text-white display-2 fw-medium title">we are architects, planner &
+                            designer.
+                        </p>
+                        <p class="text-white btmtitle fs-5 py-2">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Fugiat
+                            dolorem praesentium dolore
+                            animi repellat molestias explicabo hic veritatis earum.</p>
+                        <button class="btnRead">Read More</button>
+                    </div>
+                </div>
+                <div class="carousel-item slider4">
+                    <div class="container">
+                        <p class="text-white text-uppercase fs-5">trust and recommed</p>
+                        <p class="text-capitalize text-white display-2 fw-medium title">we are architects, planner &
+                            designer.
+                        </p>
+                        <p class="text-white btmtitle fs-5 py-2">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Fugiat
+                            dolorem praesentium dolore
+                            animi repellat molestias explicabo hic veritatis earum.</p>
+                        <button class="btnRead">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#homeslider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#homeslider" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- grid system -->
+    <section class="buildSec">
+        <div class="container py-5">
+            <!-- title -->
+            <div class="row py-3 text-center">
+                <div class="col-12">
+                    <p class="display-6 fw-normal mb-2">Build your base</p>
+                    <div class="line mx-auto mb-2"></div>
+                </div>
+                <div class="col-12">
+                    <p class="w-75 m-auto">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum labore sed, veniam nisi sunt
+                        laboriosam ducimus, odio
+                        aspernatur fugiat minima blanditiis dignissimos.
+                    </p>
+                </div>
+            </div>
+            <!-- grid -->
+            <div class="row py-3 g-4">
+                <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="outerdiv">
+                        <div>
+                            <img src="images/g7.jpg" alt="" class="img-fluid rounded-3">
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="h1">01</div>
+                            <div class="h4 text-black">Places to get lost</div>
+                        </div>
+                        <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do
+                            eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                        <div class="mt-2">
+                            <a href="" class="readlink">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="outerdiv">
+                        <div>
+                            <img src="images/g4.jpg" alt="" class="img-fluid rounded-3">
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="h1">02</div>
+                            <div class="h4 text-black">Perfect Design</div>
+                        </div>
+                        <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do
+                            eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                        <div class="mt-2">
+                            <a href="" class="readlink">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 col-12">
+                    <div class="outerdiv box3">
+                        <div>
+                            <img src="images/g6.jpg" alt="" class="img-fluid rounded-3">
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="h1">03</div>
+                            <div class="h4 text-black">Happy Clients</div>
+                        </div>
+                        <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do
+                            eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                        <div class="mt-2">
+                            <a href="" class="readlink">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- grid system -->
+    <section class="designSec">
+        <div class="container py-lg-3 py-sm-0 py-0">
+            <div class="row py-lg-3 py-sm-0 py-0 g-3">
+                <div class="col-xl-6 col-md-8 col-sm-12 col-12">
+                    <div class="p-lg-3 p-sm-1 p-0">
+                        <img src="images/g2.jpg" alt="" class="img-fluid rounded-3">
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-12 col-sm-12 col-12">
+                    <div class="p-lg-3 p-sm-1 p-0">
+                        <div>
+                            <p class="display-6 fw-normal mb-2">Design</p>
+                            <div class="line mb-2"></div>
+                        </div>
+                        <p class="text-secondary py-3 designinfo">
+                            Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei
+                            an
+                            pericula euripidis, hinc
+                            partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem tincidunt vix at,
+                            vel
+                            pertinax sensibus id,
+                            error epicurei mea et. Mea facilisis urbanitas moderatius id. Vis ei rationibus definiebas,
+                            eu
+                            qui purto zril
+                        </p>
+                        <div class="pt-2">
+                            <div>
+                                <p class="mb-1 fw-medium">Exterior Design</p>
+                                <div class="progress" role="progressbar" aria-label="prog1" aria-valuenow="100"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 100%"></div>
+                                </div>
+                            </div>
+                            <div class="w-75">
+                                <p class="my-1 fw-medium">Interior Design</p>
+                                <div class="progress" role="progressbar" aria-label="prog1" aria-valuenow="100"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginpage" tabindex="-1" aria-labelledby="loginpageLabel" aria-hidden="true"
+        data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-3" id="loginpageLabel">Login Here</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="row p-1">
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="mail" placeholder="">
+                                    <label for="mail">Email address</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row p-1">
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="password" class="form-control" id="pass" placeholder="">
+                                    <label for="pass">Password</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-success">proceed</button>
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- bootstrap js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
