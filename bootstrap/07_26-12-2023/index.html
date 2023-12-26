@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.2/font/bootstrap-icons.min.css">
+    <!-- bootstrap css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaQuery.css">
+</head>
+
+<body>
+    <header class="">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-white" href="#">
+                        <h2 class="">
+                            <span class="bi bi-house-door"></span>
+                            Frontage
+                        </h2>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#headerNav"
+                        aria-controls="headerNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="fa-solid fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="headerNav">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-white text-uppercase" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white text-uppercase" href="#">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-uppercase text-white" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Account
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#loginpage">Login</a></li>
+                                    <li><a class="dropdown-item" href="#">Register</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="nav-link dropdown-toggle text-white text-uppercase" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Blog
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Blog</a></li>
+                                    <li><a class="dropdown-item" href="#">New Blog</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="nav-link dropdown-toggle text-white text-uppercase" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Shop
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Ecommerce</a></li>
+                                    <li><a class="dropdown-item" href="#">Ecommerce Page</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white text-uppercase" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white text-uppercase" href="#" data-bs-toggle="offcanvas"
+                                    data-bs-target="#searchPanel" aria-controls="searchPanel">
+                                    <span class="bi bi-search"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- carousel -->
+    <section class="homeslide">
+        <div id="homeslider" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active slider1">
+                    <div class="container">
+                        <p class="text-white text-uppercase fs-5">trust and recommed</p>
+                        <p class="text-capitalize text-white display-2 fw-medium title">we are
+                            architects, planner &
+                            designer.
+                        </p>
+                        <p class="text-white fs-5 py-2 btmtitle">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Fugiat
+                            dolorem praesentium dolore
+                            animi repellat molestias explicabo hic veritatis earum.</p>
+                        <button class="btnRead">Read More</button>
+                    </div>
+                </div>
+                <div class="carousel-item slider2">
+                    <div class="container">
+                        <p class="text-white text-uppercase fs-5">trust and recommed</p>
+                        <p class="text-capitalize text-white display-2 fw-medium title">we are architects, planner &
+                            designer.
+                        </p>
+                        <p class="text-white btmtitle fs-5 py-2">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Fugiat
+                            dolorem praesentium dolore
+                            animi repellat molestias explicabo hic veritatis earum.</p>
+                        <button class="btnRead">Read More</button>
+                    </div>
+                </div>
+                <div class="carousel-item slider3">
+                    <div class="container">
+                        <p class="text-white text-uppercase fs-5">trust and recommed</p>
+                        <p class="text-capitalize text-white display-2 fw-medium title">we are architects, planner &
+                            designer.
+                        </p>
+                        <p class="text-white btmtitle fs-5 py-2">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Fugiat
+                            dolorem praesentium dolore
+                            animi repellat molestias explicabo hic veritatis earum.</p>
+                        <button class="btnRead">Read More</button>
+                    </div>
+                </div>
+                <div class="carousel-item slider4">
+                    <div class="container">
+                        <p class="text-white text-uppercase fs-5">trust and recommed</p>
+                        <p class="text-capitalize text-white display-2 fw-medium title">we are architects, planner &
+                            designer.
+                        </p>
+                        <p class="text-white btmtitle fs-5 py-2">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Fugiat
+                            dolorem praesentium dolore
+                            animi repellat molestias explicabo hic veritatis earum.</p>
+                        <button class="btnRead">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#homeslider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#homeslider" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- grid system -->
+    <section class="buildSec">
+        <div class="container py-5">
+            <!-- title -->
+            <div class="row py-3 text-center">
+                <div class="col-12">
+                    <p class="display-6 fw-normal mb-2">Build your base</p>
+                    <div class="line mx-auto mb-2"></div>
+                </div>
+                <div class="col-12">
+                    <p class="w-75 m-auto">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum labore sed, veniam nisi sunt
+                        laboriosam ducimus, odio
+                        aspernatur fugiat minima blanditiis dignissimos.
+                    </p>
+                </div>
+            </div>
+            <!-- grid -->
+            <div class="row py-3 g-4">
+                <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="outerdiv">
+                        <div>
+                            <img src="images/g7.jpg" alt="" class="img-fluid rounded-3">
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="h1">01</div>
+                            <div class="h4 text-black">Places to get lost</div>
+                        </div>
+                        <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do
+                            eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                        <div class="mt-2">
+                            <a href="" class="readlink">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="outerdiv">
+                        <div>
+                            <img src="images/g4.jpg" alt="" class="img-fluid rounded-3">
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="h1">02</div>
+                            <div class="h4 text-black">Perfect Design</div>
+                        </div>
+                        <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do
+                            eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                        <div class="mt-2">
+                            <a href="" class="readlink">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 col-12">
+                    <div class="outerdiv box3">
+                        <div>
+                            <img src="images/g6.jpg" alt="" class="img-fluid rounded-3">
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="h1">03</div>
+                            <div class="h4 text-black">Happy Clients</div>
+                        </div>
+                        <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do
+                            eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                        <div class="mt-2">
+                            <a href="" class="readlink">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- grid system -->
+    <section class="designSec">
+        <div class="container py-lg-3 py-sm-0 py-0">
+            <div class="row py-lg-3 py-sm-0 py-0 g-3">
+                <div class="col-xl-6 col-md-8 col-sm-12 col-12">
+                    <div class="p-lg-3 p-sm-1 p-0">
+                        <img src="images/g2.jpg" alt="" class="img-fluid rounded-3">
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-12 col-sm-12 col-12">
+                    <div class="p-lg-3 p-sm-1 p-0">
+                        <div>
+                            <p class="display-6 fw-normal mb-2">Design</p>
+                            <div class="line mb-2"></div>
+                        </div>
+                        <p class="text-secondary py-3 designinfo">
+                            Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei
+                            an
+                            pericula euripidis, hinc
+                            partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem tincidunt vix at,
+                            vel
+                            pertinax sensibus id,
+                            error epicurei mea et. Mea facilisis urbanitas moderatius id. Vis ei rationibus definiebas,
+                            eu
+                            qui purto zril
+                        </p>
+                        <div class="pt-2">
+                            <div>
+                                <p class="mb-1 fw-medium">Exterior Design</p>
+                                <div class="progress" role="progressbar" aria-label="prog1" aria-valuenow="100"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 100%"></div>
+                                </div>
+                            </div>
+                            <div class="w-75">
+                                <p class="my-1 fw-medium">Interior Design</p>
+                                <div class="progress" role="progressbar" aria-label="prog1" aria-valuenow="100"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- accordian -->
+    <section class="faqSec">
+        <div class="container py-5">
+            <div class="row pb-3">
+                <div class="col-12 text-center">
+                    <h1 class="title">FAQ</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="accordion" id="faqQues">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#ques1" aria-expanded="true" aria-controls="ques1">
+                                    What do you know about interior?
+                                </button>
+                            </h2>
+                            <div id="ques1" class="accordion-collapse collapse show" data-bs-parent="#faqQues">
+                                <div class="accordion-body">
+                                    Interior design is the art and science of understanding people's behavior to create
+                                    functional spaces, that are
+                                    aesthetically pleasing, within a building. Decoration is the furnishing or adorning
+                                    of a space with decorative elements,
+                                    sometimes complemented by advice and practical assistance.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#ques2" aria-expanded="false" aria-controls="ques2">
+                                    What is the concept of interior?
+                                </button>
+                            </h2>
+                            <div id="ques2" class="accordion-collapse collapse" data-bs-parent="#faqQues">
+                                <div class="accordion-body">
+                                    An interior design concept is the central theme that all the design elements are
+                                    focused upon. It exists as an idea
+                                    first and is brought to reality through careful planning. At its best, an interior
+                                    design concept is a visual theme that
+                                    evokes a specific mood by strategically using color, space, and style.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#ques3" aria-expanded="false" aria-controls="ques3">
+                                    What is important in interior?
+                                </button>
+                            </h2>
+                            <div id="ques3" class="accordion-collapse collapse" data-bs-parent="#faqQues">
+                                <div class="accordion-body">
+                                    <b>Proper Lighting:</b> Adequate lighting is essential for creating a safe and
+                                    functional
+                                    interior space. Well-lit areas help
+                                    prevent accidents and provide a sense of security. Interior designers carefully plan
+                                    the placement of lights to ensure
+                                    that every corner of the room is well-illuminated.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#ques4" aria-expanded="false" aria-controls="ques4">
+                                    What are the 7 basics of interior design?
+                                </button>
+                            </h2>
+                            <div id="ques4" class="accordion-collapse collapse" data-bs-parent="#faqQues">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>The principles of interior design are the rules and guidelines that
+                                            designers follow to create functional, aesthetically
+                                            pleasing spaces.</li>
+                                        <li>There are seven main principles of interior design: balance, harmony,
+                                            rhythm, proportion and scale, emphasis, contrast,
+                                            and details</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- list group -->
+    <!-- image gallery -->
+    <section class="imgGallery">
+        <div class="container py-5">
+            <div class="row mb-3">
+                <div class="col-12 text-center">
+                    <h1 class="title">Image Gallery</h1>
+                </div>
+            </div>
+            <div class="row mb-3 gap-3">
+                <div class="col-12">
+                    <div class="list-group" id="Gallery" role="tablist">
+                        <div class="d-flex gap-3 align-items-center">
+                            <a class="list-group-item list-group-item-action active" id="list1" data-bs-toggle="list"
+                                href="#list_all" role="tab" aria-controls="list_all">All
+                                Images</a>
+                            <a class="list-group-item list-group-item-action" id="list2" data-bs-toggle="list"
+                                href="#list_live" role="tab" aria-controls="list_live">living</a>
+                            <a class="list-group-item list-group-item-action" id="list3" data-bs-toggle="list"
+                                href="#list_art" role="tab" aria-controls="list_art">Architectire</a>
+                            <a class="list-group-item list-group-item-action" id="list4" data-bs-toggle="list"
+                                href="#list_house" role="tab" aria-controls="list_house">House</a>
+                            <a class="list-group-item list-group-item-action" id="list5" data-bs-toggle="list"
+                                href="#list_ideas" role="tab" aria-controls="list_ideas">Ideas</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="list_all" role="tabpanel" aria-labelledby="list1">
+                            <div class="row g-3">
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                                    <img src="https://media.designcafe.com/wp-content/uploads/2020/04/23125905/creative-home-decor-ideas.jpg"
+                                        alt="" class="img-fluid">
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                                    <img src="https://images.livspace-cdn.com/plain/https://jumanji.livspace-cdn.com/magazine/wp-content/uploads/sites/2/2021/03/21210525/indian-interior-design-ideas.jpg"
+                                        alt="" class="img-fluid">
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                                    <img src="https://images.woodenstreet.de/image/data/juhi/blog%20images/06-april-2022/interior-design-ideas-of-2022-banner-2.jpg"
+                                        alt="" class="img-fluid">
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                                    <img src="https://media.designcafe.com/wp-content/uploads/2019/12/17055333/living-room-interior-design-checklist-intro.jpg"
+                                        alt="" class="img-fluid">
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                                    <img src="https://www.spectruminteriors.co.in/wp-content/uploads/2020/04/Living-Room-8.jpg"
+                                        alt="" class="img-fluid">
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                                    <img src="https://jumanji.livspace-cdn.com/magazine/wp-content/uploads/sites/4/2022/03/25071339/2019_10_01_SG_LAUNCH_LR1_OP1_V1_SD_01-1.jpg"
+                                        alt="" class="img-fluid">
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                                    <img src="https://www.uidaho.edu/-/media/UIdaho-Responsive/Images/caa/Programs/Interior-Design/featuredstory/olivares-library.jpg"
+                                        alt="" class="img-fluid">
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                                    <img src="https://images.ctfassets.net/3s5io6mnxfqz/4SQAWxXttYrsJrBXjkokI5/91f006979a07feb7c9f951bc7e747368/AdobeStock_78960773.jpeg"
+                                        alt="" class="img-fluid">
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                                    <img src="https://www.bluentcad.com/images/interior-design-drawings-1280x720.webp"
+                                        alt="" class="img-fluid">
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                                    <img src="https://media.designcafe.com/wp-content/uploads/2022/07/15170350/luxury-home-design-on-budget.jpg"
+                                        alt="" class="img-fluid">
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                                    <img src="https://media.designcafe.com/wp-content/uploads/2023/01/31151510/contemporary-interior-design-ideas-for-your-home.jpg"
+                                        alt="" class="img-fluid">
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                                    <img src="https://www.decorilla.com/online-decorating/wp-content/uploads/2020/07/Coastal-house-interior-design.jpg"
+                                        alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="list_live" role="tabpanel" aria-labelledby="list2">
+                            <div class="row g-3">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                                    <img src="https://media.designcafe.com/wp-content/uploads/2019/12/17055333/living-room-interior-design-checklist-intro.jpg"
+                                        alt="" class="img-fluid">
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                                    <img src="https://www.spectruminteriors.co.in/wp-content/uploads/2020/04/Living-Room-8.jpg"
+                                        alt="" class="img-fluid">
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                                    <img src="https://jumanji.livspace-cdn.com/magazine/wp-content/uploads/sites/4/2022/03/25071339/2019_10_01_SG_LAUNCH_LR1_OP1_V1_SD_01-1.jpg"
+                                        alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="list_art" role="tabpanel" aria-labelledby="list3">
+                            <div class="row g-3">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                                    <img src="https://www.uidaho.edu/-/media/UIdaho-Responsive/Images/caa/Programs/Interior-Design/featuredstory/olivares-library.jpg"
+                                        alt="" class="img-fluid">
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                                    <img src="https://images.ctfassets.net/3s5io6mnxfqz/4SQAWxXttYrsJrBXjkokI5/91f006979a07feb7c9f951bc7e747368/AdobeStock_78960773.jpeg"
+                                        alt="" class="img-fluid">
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                                    <img src="https://www.bluentcad.com/images/interior-design-drawings-1280x720.webp"
+                                        alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="list_house" role="tabpanel" aria-labelledby="list4">
+                            <div class="row g-3">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                                    <img src="https://media.designcafe.com/wp-content/uploads/2022/07/15170350/luxury-home-design-on-budget.jpg"
+                                        alt="" class="img-fluid">
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                                    <img src="https://media.designcafe.com/wp-content/uploads/2023/01/31151510/contemporary-interior-design-ideas-for-your-home.jpg"
+                                        alt="" class="img-fluid">
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                                    <img src="https://www.decorilla.com/online-decorating/wp-content/uploads/2020/07/Coastal-house-interior-design.jpg"
+                                        alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="list_ideas" role="tabpanel" aria-labelledby="list5">
+                            <div class="row g-3">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                                    <img src="https://media.designcafe.com/wp-content/uploads/2020/04/23125905/creative-home-decor-ideas.jpg"
+                                        alt="" class="img-fluid">
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                                    <img src="https://images.livspace-cdn.com/plain/https://jumanji.livspace-cdn.com/magazine/wp-content/uploads/sites/2/2021/03/21210525/indian-interior-design-ideas.jpg"
+                                        alt="" class="img-fluid">
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                                    <img src="https://images.woodenstreet.de/image/data/juhi/blog%20images/06-april-2022/interior-design-ideas-of-2022-banner-2.jpg"
+                                        alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginpage" tabindex="-1" aria-labelledby="loginpageLabel" aria-hidden="true"
+        data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-3" id="loginpageLabel">Login Here</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="row p-1">
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="mail" placeholder="">
+                                    <label for="mail">Email address</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row p-1">
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="password" class="form-control" id="pass" placeholder="">
+                                    <label for="pass">Password</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-success">proceed</button>
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-top offcanvasSearch" tabindex="-1" id="searchPanel"
+        aria-labelledby="searchPanelLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="searchPanelLabel"></h5>
+            <button type="button" data-bs-dismiss="offcanvas" class="btnclose" aria-label="Close">
+                <span class="bi bi-x"></span>
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <form action="#">
+                <div class="w-50 m-auto">
+                    <div class="input-group">
+                        <input type="text" name="" id="" class="form-control" placeholder="Search Here">
+                        <button class="btn btn-primary input-group-text">Search</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- bootstrap js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

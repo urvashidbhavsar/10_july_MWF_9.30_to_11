@@ -1,0 +1,37 @@
+@media (max-width:576px) {
+    .homeslide .title{
+        width: 100%;
+    }
+    .homeslide .btmtitle{
+        width: 100%;
+    }
+}
+@media (min-width:576px) {
+    .homeslide .title{
+        width: 100%;
+    }
+    .homeslide .btmtitle{
+        width: 100%;
+    }
+    .box3{
+        margin: auto;
+        width: 300px;
+    }
+}
+@media (min-width:768px) {
+      .box3{
+        margin: auto;
+        width: 350px;
+    }
+}
+@media (min-width:992px) {
+    .homeslide .title{
+        width: 800px;
+    }
+    .homeslide .btmtitle{
+        width: 800px;
+    }
+     .box3{
+        width: unset;
+    }
+}
